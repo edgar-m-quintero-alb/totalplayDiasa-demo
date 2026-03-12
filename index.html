@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Diasa Demo Totalplay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="icons/iconTotalplay.jpeg">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      background-image: url("img/cafePage.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+
+<body>
+
+ <bsc-chat
+    apikey="fbaba6a0f74742a08ff0332f08901817"
+    theme="../theme/theme.json"
+    socket-url="wss://api.ng.botschool.ai"
+    configs='{
+    "maximized": true,
+    "answerRating": "always",
+    "image": "https://s3.ng.botschool.ai/images/students/68dff262212c878073d23da5",
+    "welcomeMessages": ["Gracias por contactar el Asistente Virtual Diasa 🤖. En que te podemos ayudar?"],
+    "placeholder": "Escribe tu mensaje aquí",
+    "title": "Diasa Internacional"
+    }'>
+</bsc-chat>
+<script src="https://webchat.ng.botschool.ai/chat-component.js"></script>
+
+
+
+</body>
+
+</html>

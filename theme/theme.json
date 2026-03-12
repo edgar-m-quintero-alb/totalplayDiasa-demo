@@ -1,0 +1,22 @@
+{
+    "title": "Diasa Demo Totalplay",
+    "subTitle": "",
+    "styles": ["../css/diasa.css"],
+    "fonts": ["../fonts/fonts.css"],
+    "placeholder": "Escribe tu mensaje aquí",
+    "isMarkdown": true,
+    "chatHistory": "off",
+    "answerRating": "always",
+    "cardOptions": {
+      "direction": "horizontal",
+      "slidesPerView": 1.5,
+      "centeredSlides": true,
+      "spaceBetween": 10,
+      "navigation": true,
+      "pagination": { "clickable": true },
+      "keyboard": {
+        "enabled": true
+      },
+      "centeredSlidesBounds": true
+    }
+}
