@@ -21,6 +21,29 @@
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
+
+    .whatsapp-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 1000;
+    transition: transform 0.3s ease;    
+    background-color: #25d366;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+
+    a {
+      padding-top: 3px;
+    }
+}
+
+    .whatsapp-fixed:hover {
+        transform: scale(1.1); /* Efeito de aumentar ao passar o rato */
+    }
   </style>
 </head>
 
@@ -28,7 +51,7 @@
 
  <bsc-chat
     apikey="fbaba6a0f74742a08ff0332f08901817"
-    theme="../theme/theme.json"
+    theme="https://webchat-themes.ng.botschool.ai/private-themes/diasa/theme.json"
     socket-url="wss://api.ng.botschool.ai"
     configs='{
     "maximized": true,
@@ -36,10 +59,16 @@
     "image": "https://s3.ng.botschool.ai/images/students/68dff262212c878073d23da5",
     "welcomeMessages": ["Gracias por contactar el Asistente Virtual Diasa 🤖. En que te podemos ayudar?"],
     "placeholder": "Escribe tu mensaje aquí",
-    "title": "Diasa Internacional"
+    "title": "Demo Totalplay-Diasa"
     }'>
 </bsc-chat>
 <script src="https://webchat.ng.botschool.ai/chat-component.js"></script>
+
+<div class="whatsapp-fixed">
+    <a href="https://wa.me/351967315978?text=Hola, necesito información sobre..." target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="50" height="50">
+    </a>
+</div>
 
 
 
